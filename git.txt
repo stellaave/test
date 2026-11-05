@@ -1,0 +1,73 @@
+
+EYA@Your-fav-viper UCRT64 ~
+$ cmd.exe /c "reg query \"HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\" /v Desktop"
+Microsoft Windows [Version 10.0.26300.9818]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EYA>
+C:\Users\EYA>reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" /v Desktop
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+    Desktop    REG_EXPAND_SZ    C:\Users\EYA\OneDrive\Bureau
+
+
+C:\Users\EYA>
+C:\Users\EYA>exit
+
+EYA@Your-fav-viper UCRT64 ~
+$ mkdir -p /c/Users/EYA/Desktop
+
+EYA@Your-fav-viper UCRT64 ~
+$ mkdir -p /c/Users/EYA/Desktop/Gestion_Panier
+
+EYA@Your-fav-viper UCRT64 ~
+$ cd /c/Users/EYA/Desktop/Gestion_Panier
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier
+$ touch index.html style.css
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier
+$ ls
+index.html  style.css
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier
+$ code .
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier
+$ git init
+Initialized empty Git repository in C:/Users/EYA/Desktop/Gestion_Panier/.git/
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (master)
+$ git add .
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (master)
+$ git commit -m "Initial project"
+[master (root-commit) ef163d7] Initial project
+ 2 files changed, 197 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (master)
+$ git remote add origin https://github.com/Eya-33/gestion-de-panier.git
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (master)
+$ git add .
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (master)
+$ git branch -M main
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.36 KiB | 232.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Eya-33/gestion-de-panier.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+EYA@Your-fav-viper UCRT64 ~/Desktop/Gestion_Panier (main)
+$
